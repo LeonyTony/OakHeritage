@@ -70,14 +70,10 @@ body {
   -moz-transform: skew(10deg);
   -o-transform: skew(10deg);
   text-align: center;
-}
-
-.block a {
-  display: block;
-  text-decoration: none;
-  color: #000000;
+  color: black;
   text-align: center;
   font-size: 3em;
+  cursor: pointer;
 }
 
 #block1 {
