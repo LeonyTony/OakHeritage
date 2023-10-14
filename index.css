@@ -1,0 +1,131 @@
+body {
+  background-color: #fdeefd;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.header h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 4em;
+    color: #222222;
+    text-align: center;
+}
+
+.post-detail {
+  width: 70%;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.post-info {
+  color: #be9656;
+  font-style: italic;
+  position: relative;
+  display: block;
+  font-size: 20px;
+}
+
+.post-info:before {
+  content: "";
+  border-bottom: 1px solid #be9656;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 0;
+}
+
+.post-info span {
+  display: inline-block;
+  padding: 0 1.2em;
+  background: #fdeefd;
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  z-index: 0;
+  box-shadow: inset 0 0 0 200vw rgba(191, 201, 119, 0.6);
+  width: 20%;
+  height: 60vh;
+  -webkit-transform: skew(10deg);
+  -moz-transform: skew(10deg);
+  -o-transform: skew(10deg);
+  text-align: center;
+}
+
+.block a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  font-size: 3em;
+}
+
+#block1 {
+  background: url(./surs/war.jpg);
+  box-shadow: inset 0 0 0 200vw rgba(124, 197, 119, 0.6);
+}
+
+#block2 {
+  background: url(./surs/museam.jpg);
+  box-shadow: inset 0 0 0 200vw rgba(191, 201, 119, 0.6);
+}
+
+#block3 {
+  background: url(./surs/culture.jpg);
+  box-shadow: inset 0 0 0 200vw rgba(192, 119, 119, 0.6);
+}
+
+#block1:hover {
+  box-shadow: inset 0 0 0 200vw rgba(158, 241, 152, 0.6);
+}
+
+#block2:hover {
+  box-shadow: inset 0 0 0 200vw rgba(255, 243, 135, 0.6);
+}
+
+#block3:hover {
+  box-shadow: inset 0 0 0 200vw rgba(239, 156, 156, 0.6);
+}
+
+@media screen and (max-width: 1365px) {
+  body {
+    font-size: 9px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+
+  .block {
+    width: 70vw;
+    height: 20vh;
+  }
+
+  #block2 {
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+  }
+}
