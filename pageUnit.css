@@ -84,6 +84,10 @@ header h1 {
   text-align: center;
 }
 
+.item > * {
+  text-align: center;
+}
+
 @media screen and (max-width: 1025px) {
   body {
     font-size: 12px;
