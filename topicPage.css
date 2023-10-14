@@ -58,56 +58,6 @@ header h1 {
   gap: 5vw;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-  width: 20%;
-}
-
-.menuItem {
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-transform: skew(10deg);
-  -moz-transform: skew(10deg);
-  -o-transform: skew(10deg);
-}
-
-.menuItem a {
-  text-decoration: none;
-  color: #000000;
-  text-align: center;
-  font-size: 3em;
-}
-
-#menuItem1 {
-  background: url(./surs/war.jpg);
-  box-shadow: inset 0 0 0 200vw rgba(124, 197, 119, 0.6);
-}
-
-#menuItem2 {
-  background: url(./surs/museam.jpg);
-  box-shadow: inset 0 0 0 200vw rgba(191, 201, 119, 0.6);
-  -webkit-transform: skew(-10deg);
-  -moz-transform: skew(-10deg);
-  -o-transform: skew(-10deg);
-}
-
-#menuItem3 {
-  background: url(./surs/culture.jpg);
-  box-shadow: inset 0 0 0 200vw rgba(192, 119, 119, 0.6);
-}
-
-#menuItem4 {
-  background: url(./surs/gomel.jpeg);
-  box-shadow: inset 0 0 0 200vw rgba(125, 117, 176, 0.6);
-  -webkit-transform: skew(-10deg);
-  -moz-transform: skew(-10deg);
-  -o-transform: skew(-10deg);
-}
-
 .content h2 {
   font-size: 2rem;
 }
@@ -208,38 +158,10 @@ nav {
     flex-direction: column;
     gap: 0;  
   }
-
-  nav {
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .menuItem {
-    width: 20vw;
-    height: 10vh;
-  }
-
-  #menuItem2 {
-    -webkit-transform: skew(10deg);
-    -moz-transform: skew(10deg);
-    -o-transform: skew(10deg);
-  }
-
-  #menuItem4 {
-    -webkit-transform: skew(10deg);
-    -moz-transform: skew(10deg);
-    -o-transform: skew(10deg);
-  }
-
 }
 
 @media screen and (min-width: 100px) and (max-width: 1000px) {
   body {
     font-size: 10px;
-  }
-
-  .menuItem {
-    height: 5vh;
   }
 }
