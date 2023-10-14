@@ -8,8 +8,9 @@ let navPages = {
 $(() => {
   $('nav').first().load('components/nav/nav.html');
   $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'components/nav/nav.css') );
-
-  $('.menuItem').each((_, element) => {
-    element.click(() => window.location.href = navPages[element.id] ?? "index.html")
+  
+  $(document).on('click', '.menuItem', (e) => {
+    let id = $(e.target).attr('id');
+    window.location.href = navPages[id] ?? 'index.html';
   });
 });
