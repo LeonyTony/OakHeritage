@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  background-color: #fdeefd;
+}
+
+header{
+  height: 150px;
+}
+
+header h1 {
+ font-family: 'Microsoft YaHei Light', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 3em;
+  color: #222222;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.post-detail {
+  width: 70%;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.post-info {
+  color: #be9656;
+  font-style: italic;
+  position: relative;
+  display: block;
+  font-size: 20px;
+  font-family: "Gost";
+}
+
+.post-info:before {
+  content: "";
+  border-bottom: 1px solid #be9656;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 0;
+}
+
+.post-info span {
+  display: inline-block;
+  padding: 0 1.2em;
+  background: #fdeefd;
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  gap: 5vw;
+}
+
+.content {
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  min-width: 300px;
+  cursor: pointer;
+  font-family: "Gost";
+}
+
+.item img {
+  width: 100%;
+}
+.item:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.item h2 {
+  margin: 0;
+  font-size: 2em;
+  text-wrap: balance;
+  text-align: center;
+  line-height: 0.9em;
+}
+
+.item > * {
+  text-align: center;
+}
+@media screen and (max-width: 1025px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .item {
+    width: 70vw;
+  }
+}
+footer{
+  display: flex;
+  font-size: 1em;
+  background-color:  #fdeefd;
+  display: flex;
+  justify-content: space-evenly;
+}
+.about {
+  width: 50%;
+  font-family: 'Microsoft YaHei Light';
+}
+
+.post-det {
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.post-inf {
+  color: #be9656;
+  font-style: italic;
+  position: relative;
+  display: block;
+  font-size: 20px;
+}
+
+.post-inf:before {
+  content: "";
+  border-bottom: 1px solid #be9656;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 0;
+}
+
+.post-inf span {
+  display: inline-block;
+  padding: 0 1.2em;
+  background: #fdeefd;
+  position: relative;
+  z-index: 2;
+}

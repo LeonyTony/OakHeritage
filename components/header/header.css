@@ -1,0 +1,42 @@
+header h1 {
+  font-family: 'Microsoft YaHei Light';
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 3em;
+  color: #222222;
+  text-align: center;
+}
+
+header .post-detail {
+  width: 70%;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+header .post-info {
+  color: #be9656;
+  font-style: italic;
+  position: relative;
+  display: block;
+  font-size: 20px;
+  font-family: 'Gost'
+}
+
+header .post-info:before {
+  content: "";
+  border-bottom: 1px solid #be9656;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 0;
+}
+
+header .post-info span {
+  display: inline-block;
+  padding: 0 1.2em;
+  background: #fdeefd;
+  position: relative;
+  z-index: 2;
+}
+
