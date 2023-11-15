@@ -18,5 +18,5 @@ $(() => {
     })
 
   });
-  $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '/components/footer/footer.css') );
+  $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'components/footer/footer.css') );
 });
