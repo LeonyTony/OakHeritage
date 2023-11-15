@@ -6,9 +6,9 @@ let navPages = {
 };
 
 $(() => {
-  const currentLang = window.location.pathname.match(/^\/(\w{2})\//)[1];
+  const currentLang = window.location.pathname.match(/\/(\w{2})\//)[1];
 
-  $('nav').first().load(`/components/nav/${currentLang}/nav.html`);
+  $('nav').first().load(`components/nav/${currentLang}/nav.html`);
   $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '/components/nav/nav.css') );
   
   $(document).on('click', '.menuItem', (e) => {

@@ -5,9 +5,9 @@ const langs = [
 ];
 
 $(() => {
-  const currentLang = window.location.pathname.match(/^\/(\w{2})\//)[1];
+  const currentLang = window.location.pathname.match(/\/(\w{2})\//)[1];
 
-  $('footer').first().load(`/components/footer/${currentLang}/footer.html`, () => {
+  $('footer').first().load(`components/footer/${currentLang}/footer.html`, () => {
 
     langs.forEach((value) => $('footer .lang').append(`<span id='${value}'>${value}</span>`));
 

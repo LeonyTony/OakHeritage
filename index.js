@@ -1,1 +1,1 @@
-window.location.href = '/ru/index.html';
+window.location.pathname = 'OakHeritage/ru/index.html';
