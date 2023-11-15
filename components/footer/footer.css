@@ -45,6 +45,7 @@ footer .lang {
 
 footer .lang span {
   cursor: default;
+  font-size: 1.2em;
 }
 
 footer .lang span:first-of-type {
